@@ -1,0 +1,50 @@
+.section-team {
+  background-color: var(--section-team);
+}
+.section-team-div {
+  justify-content: center;
+}
+
+.section-team-ul {
+  display: flex;
+  list-style-type: none;
+}
+.section-team-ul-li {
+  background-color: #ffffff;
+  margin-right: 30px;
+  justify-content: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px 4px 4px 4px;
+}
+.section-team-ul-li-img {
+  width: 270px;
+  height: 260px;
+}
+
+.team-info {
+  padding: 30px 20px;
+}
+.section-team-ul-li-h3 {
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-h-color);
+}
+
+.section-team-ul-li-p {
+  font-weight: 400;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--font-description);
+  margin-bottom: 16px;
+}

@@ -1,0 +1,122 @@
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-one {
+  display: flex;
+  align-items: baseline;
+}
+
+.header-nav {
+  width: 294px;
+  margin-right: 300px;
+}
+
+.img-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+  display: inline-block;
+  color: #000000;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.img-header-span {
+  color: var(--items-decor);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.header-nav-item {
+  display: inline-block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--font-h-color);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-item::after {
+  position: absolute;
+  background-color: var(--items-decor);
+  content: " ";
+  bottom: -1px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  opacity: 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active::after {
+  opacity: 1;
+}
+
+.header-nav-item:hover,
+.header-nav-item:focus {
+  color: var(--items-decor);
+}
+
+.header-nav-item:hover::after,
+.header-nav-item:focus::after {
+  opacity: 1;
+}
+
+.active {
+  color: var(--items-decor);
+}
+
+.navbar-one-ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.studiobutton {
+  color: var(--items-decor);
+}
+
+.contacts-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  width: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  & a:focus,
+  & a:focus .contacts-item-svg,
+  & a:hover,
+  & a:hover .contacts-item-svg {
+    color: var(--items-decor);
+    fill: var(--items-decor);
+  }
+}
+
+.contacts-item-svg {
+  margin-right: 4px;
+  width: 16px;
+  height: 12px;
+  fill: var(--font-description);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,18 @@
+//Utils
+@import "./utils/global";
+@import "./utils/variables";
+
+//Layouts
+@import "./layouts/header";
+@import "./layouts/global-body";
+@import "./layouts/cards-list";
+@import "./layouts/footer";
+
+//Components
+@import "./components/social-list";
+@import "./components/footer-form";
+@import "./components/headers";
+@import "./components/contacts";
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/overlay";

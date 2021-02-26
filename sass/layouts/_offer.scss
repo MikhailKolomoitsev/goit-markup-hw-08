@@ -1,0 +1,46 @@
+.section-offer {
+  padding: 0 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--section-offer-color);
+}
+
+.background-offer {
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/offer-section/bg.jpg);
+  padding: 200px 0;
+}
+.section-offer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-offer-h2 {
+  margin: auto;
+  margin-bottom: 20px;
+  color: #ffffff;
+  width: 696px;
+  height: 120px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.img-section-offer {
+  position: relative;
+}

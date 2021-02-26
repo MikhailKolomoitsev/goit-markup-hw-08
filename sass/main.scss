@@ -1,0 +1,22 @@
+//Utils
+@import "./utils/global";
+@import "./utils/variables";
+
+//Layouts
+@import "./layouts/header";
+@import "./layouts/global-body";
+@import "./layouts/offer";
+@import "./layouts/details";
+@import "./layouts/whatwedo";
+@import "./layouts/team";
+@import "./layouts/partners";
+@import "./layouts/footer";
+
+//Components
+@import "./components/social-list";
+@import "./components/footer-form";
+@import "./components/backdrop";
+@import "./components/headers";
+@import "./components/contacts";
+@import "./components/buttons";
+@import "./components/container";

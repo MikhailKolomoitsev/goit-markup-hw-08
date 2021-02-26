@@ -1,0 +1,32 @@
+.section-whatwedo {
+  text-align: center;
+
+  &-h2 {
+    margin-bottom: 50px;
+  }
+  &-li {
+    display: flex;
+  }
+  &-list {
+    padding: 0;
+    display: flex;
+  }
+}
+.img-whatwedo {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+.info-whatwedo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.info-whatwedo .title-links-footer {
+  margin: 0;
+}
