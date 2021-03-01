@@ -1,8 +1,14 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Global */
@@ -201,11 +207,11 @@ img {
 }
 
 .padding-bottom {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 .padding-top {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .margin-center {
@@ -721,7 +727,7 @@ footer .social-list-icon {
 }
 
 .container {
-  width: 1200px;
+  max-width: 450px;
   margin: 0 auto;
   /* padding-left: 15px; */
   padding: 0 15px;
