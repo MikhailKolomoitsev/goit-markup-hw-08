@@ -9,16 +9,16 @@
   list-style-type: none;
 }
 .section-team-ul-li {
+  margin-bottom: 30px;
   background-color: #ffffff;
-  margin-right: 30px;
   justify-content: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px 4px 4px 4px;
 }
 .section-team-ul-li-img {
-  width: 270px;
-  height: 260px;
+  display: inline-block;
+  max-width: 450px;
 }
 
 .team-info {
