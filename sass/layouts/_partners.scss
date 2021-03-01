@@ -1,18 +1,14 @@
-.partners {
-  display: none;
-}
-
 .partners-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.partners-item {
-  /* border: 1px solid var(--grey-items);
-  box-sizing: border-box;
-  border-radius: 4px; */
-}
+// .partners-item {
+//   /* border: 1px solid var(--grey-items);
+//   box-sizing: border-box;
+//   border-radius: 4px; */
+// }
 
 .partners-link:focus,
 .partners-link:hover {
@@ -29,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #afb1b8;
@@ -37,8 +33,12 @@
   opacity: 0.9;
 }
 .partners-item {
-  width: 170px;
+  width: 210px;
   height: 90px;
+  &:nth-child(2n + 1) {
+    margin-bottom: 30px;
+    margin-right: 25px;
+  }
 }
 
 .partners-list-icon {

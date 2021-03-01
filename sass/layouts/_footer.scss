@@ -5,9 +5,12 @@
 
 .footer .container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
 }
 .left-side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-right: 70px;
 }
 .margin-bottom-10 {
@@ -73,5 +76,7 @@ footer a:focus {
 }
 
 .footer-wrapper-links {
-  margin-right: 95px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

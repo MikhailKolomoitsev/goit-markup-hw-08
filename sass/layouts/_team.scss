@@ -8,7 +8,7 @@
 .section-team-ul {
   list-style-type: none;
 }
-.section-team-ul-li {
+.section-team_card {
   margin-bottom: 30px;
   background-color: #ffffff;
   justify-content: center;
@@ -16,7 +16,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px 4px 4px 4px;
 }
-.section-team-ul-li-img {
+.section-team_card-img {
   display: inline-block;
   max-width: 450px;
 }
@@ -24,7 +24,7 @@
 .team-info {
   padding: 30px 20px;
 }
-.section-team-ul-li-h3 {
+.name-member {
   margin-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
@@ -36,7 +36,7 @@
   color: var(--font-h-color);
 }
 
-.section-team-ul-li-p {
+.memebers-position {
   font-weight: 400;
   font-family: Roboto;
   font-style: normal;
