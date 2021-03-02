@@ -2,6 +2,9 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
 }
 
 // .partners-item {
@@ -32,9 +35,10 @@
   border-radius: 4px;
   opacity: 0.9;
 }
+
 .partners-item {
-  width: 210px;
-  height: 90px;
+  margin-bottom: 30px;
+  justify-self: center;
   &:nth-child(2n + 1) {
     margin-bottom: 30px;
     margin-right: 25px;

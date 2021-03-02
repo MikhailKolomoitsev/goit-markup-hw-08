@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
-        <div class="navbar-one container">
-            <a class="img-header" href="index.html">
-                <span class="img-header-span">Web</span>Studio
+    <header class="header">
+        <div class=" container">
+            <a class="studio_label" href="index.html">
+                <span class="name_studio">Web</span>Studio
             </a>
                 <nav class="header-nav">
-                <ul class="navbar-one-ul">
-                    <li class=""><a href="index.html" class="header-nav-item active">Студия</a></li>
-                    <li class=""><a href="portfolio.html" class="header-nav-item">Портфолию</a></li>
-                    <li class=""><a href="contacts.html" class="header-nav-item">Контакты</a></li>
+                <ul class="navbar_list">
+                    <li class=""><a href="index.html" class="navbar_item active">Студия</a></li>
+                    <li class=""><a href="portfolio.html" class="navbar_item">Портфолию</a></li>
+                    <li class=""><a href="contacts.html" class="navbar_item">Контакты</a></li>
                 </ul>
                 </nav>
-
-            <div class="contacts-nav">
+                <button type="button" class="burger-button" data-menu-button>
+                    <svg class="burger-icon">
+                        <use href="./images/sprite.svg#burger_menu" ></use>
+                    </svg>
+                </button>
+            <div class="contacts_header">
             <ul class="contacts-list">
                 <li class="contacts-list_item"><a class="contacts-link mail" href="mailto:info@devstudio.com">
                 <svg class="contacts-item-svg">
@@ -42,8 +46,41 @@
         </div>
         </div>
         </nav>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="burger-closer">
+                    <use href="./images/sprite.svg#burger_closer"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-nav list">
+                <li class="mobile-menu-nav-item">
+                    <a href="index.html" class="mobile-menu-nav-link link active">Студия</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="portfolio.html" class="mobile-menu-nav-link link">Портфолию</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a href="#" class="mobile-menu-nav-link link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-contacts list">
+                <li class="mobile-menu-contacts-item">
+                    <a class="tel link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-contacts-item"
+                ><a class="mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                
+            </ul>
 
-    </header> -->
+            <ul class="mobile-menu-social list">
+                <li class="social-item"><a href="" class="mobile-menu-social-link link">Instagram</a></li>
+                <li class="social-item"><a href="" class="mobile-menu-social-link link">Twitter</a></li>
+                <li class="social-item"><a href="" class="mobile-menu-social-link link">Facebook</a></li>
+                <li class="social-item"><a href="" class="mobile-menu-social-link link">LinkedIn</a></li>
+            </ul>
+        </div>
+    </header>
  
         
     <main class="main">
@@ -158,9 +195,9 @@
                             media="(min-width: 768px)">
 
                         <source srcset="./images/team-section/img1mobile.webp 1x, ./images/team-section/img1mobile@2x.webp 2x"
-                            media="(min-width:)" type="image/webp">
+                            media="(min-width:480px)" type="image/webp">
                         <source srcset="./images/team-section/img1mobile.jpg 1x, ./images/team-section/img1mobile@2x.jpg 2x" 
-                            media="(min-width:)">
+                            media="(min-width:480px)">
                     
                         <img class="section-team_card-img" src="./images/team-section/img1mobile.jpg" alt="Игорь Демьяненко">
                     </picture>
@@ -213,9 +250,9 @@
                                 media="(min-width: 768px)">
                         
                             <source srcset="./images/team-section/img2mobile.webp 1x, ./images/team-section/img2mobile@2x.webp 2x"
-                                media="()" type="image/webp">
+                                media="(min-width:480px)" type="image/webp">
                             <source srcset="./images/team-section/img2mobile.jpg 1x, ./images/team-section/img2mobile@2x.jpg 2x"
-                                media="()">
+                                media="(min-width:480px)">
                         
                             <img class="section-team_card-img" src="./images/team-section/img2mobile.jpg" alt="Ольга Репина">
                         </picture>
@@ -270,9 +307,9 @@
                                 media="(min-width: 768px)">
                         
                             <source srcset="./images/team-section/img3mobile.webp 1x, ./images/team-section/img3mobile@2x.webp 2x"
-                                media="()" type="image/webp">
+                                media="(min-width:480px)" type="image/webp">
                             <source srcset="./images/team-section/img3mobile.jpg 1x, ./images/team-section/img3mobile@2x.jpg 2x"
-                                media="()">
+                                media="(min-width:480px)">
                         
                             <img class="section-team_card-img" src="./images/team-section/img3mobile.jpg" alt="Игорь Демьяненко">
                         </picture>
@@ -325,9 +362,9 @@
                                 media="(min-width: 768px)">
                         
                             <source srcset="./images/team-section/img4mobile.webp 1x, ./images/team-section/img4mobile@2x.webp 2x"
-                                media="(min-width: )" type="image/webp">
+                                media="(min-width:480px)" type="image/webp">
                             <source srcset="./images/team-section/img4mobile.jpg 1x, ./images/team-section/img4mobile@2x.jpg 2x"
-                                media="(min-width: )">
+                                media="(min-width:480px)">
                         
                             <img class="section-team_card-img" src="./images/team-section/img4mobile.jpg" alt="Игорь Демьяненко">
                         </picture>
@@ -426,7 +463,7 @@
 <!--Footer -->
         <footer class="footer padding-bottom padding-top">
             <div class="container">
-                <div class="left-side padding-bottom ">
+                <div class="left-side">
                     <a href="index.html" class="imgfooter imgfootera">
                         <span class="imgfoooter-span">Web</span>Studio</a>
                     <ul class="footer-contacts-ul">
@@ -441,7 +478,7 @@
                     </ul>
                 </div>
         
-                <div class="footer-wrapper-links padding-bottom ">
+                <div class="footer-wrapper-links">
                     <h3 class="title-links-footer">ПРИСОЕДИНЯЙТЕСЬ</h3>
                     <ul class="social-list">
                         <li class="social-list-item-footer">
@@ -475,7 +512,7 @@
                     </ul>
                 </div>
 
-                <div class="input-email padding-bottom ">
+                <div class="input-email">
 
                     <p class="footer-form">Подпишитесь на рассылку</p>
                     <form action="#" class="footer-form">
@@ -554,4 +591,5 @@
 
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
         </body>

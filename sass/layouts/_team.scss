@@ -6,6 +6,9 @@
 }
 
 .section-team-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   list-style-type: none;
 }
 .section-team_card {
