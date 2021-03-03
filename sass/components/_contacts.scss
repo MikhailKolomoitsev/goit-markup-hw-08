@@ -2,7 +2,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--font-description);
@@ -17,9 +17,4 @@
 
 .contacts-list {
   list-style-type: none;
-
-  &_item {
-    display: block;
-    margin-right: 15px;
-  }
 }

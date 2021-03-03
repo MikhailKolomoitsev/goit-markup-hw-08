@@ -292,6 +292,12 @@ img {
   flex-direction: row;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar_list {
+    margin-right: 84px;
+  }
+}
+
 .navbar-item_link:hover,
 .navbar-item_link:focus {
   color: var(--items-decor);
@@ -547,7 +553,7 @@ footer .social-list-icon {
 
 .footer-form-input {
   text-indent: 16px;
-  min-width: 358px;
+  width: 100px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -556,6 +562,13 @@ footer .social-list-icon {
   border-radius: 4px;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form-input {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .footer-form-input:focus,
@@ -637,7 +650,7 @@ footer .social-list-icon {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--font-description);
@@ -652,11 +665,6 @@ footer .social-list-icon {
 
 .contacts-list {
   list-style-type: none;
-}
-
-.contacts-list_item {
-  display: block;
-  margin-right: 15px;
 }
 
 .portfolio {
@@ -713,7 +721,7 @@ footer .social-list-icon {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   margin: 0 auto;
   /* padding-left: 15px; */
   padding: 0 15px;
@@ -732,7 +740,7 @@ footer .social-list-icon {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 

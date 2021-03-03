@@ -227,6 +227,12 @@
   flex-direction: row;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar_list {
+    margin-right: 84px;
+  }
+}
+
 .navbar-item_link:hover,
 .navbar-item_link:focus {
   color: var(--items-decor);
