@@ -26,16 +26,20 @@
   padding: 20px 24px;
 }
 
+.portfolio-list-img-wrapper {
+  & img {
+    display: block;
+  }
+  overflow: hidden;
+  position: relative;
+}
+
 // .list-photos {
 //   flex-direction: column;
 //   list-style-type: none;
 //   -webkit-column-count: 3;
 //   -moz-column-count: 3;
 //   column-count: 3;
-// }
-
-// .portfolio-list-img-wrapper img {
-//   display: block;
 // }
 
 // .link-cards {

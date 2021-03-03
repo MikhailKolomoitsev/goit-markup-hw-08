@@ -135,9 +135,9 @@ img {
   background-color: #fff;
   width: 100%;
   max-width: 480px;
-  height: 100vh;
-  transform: translateX(-50%) translateY(-100%);
-  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  max-height: 796px;
+  transform: translateX(-50%) translateY(-200%);
+  transition: transform 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .tel {
@@ -162,6 +162,7 @@ img {
 
 .mobile-menu.is-open {
   transform: translateX(-50%) translateY(0);
+  z-index: 999;
 }
 
 .burger-icon,
@@ -203,8 +204,21 @@ img {
   display: flex;
 }
 
-.mobile-menu-social-link:nth-child(-n + 4) .mobile-menu-social-link::after {
-  content: "111";
+.mobile-menu-social_item:not(:last-child) {
+  margin-right: 20px;
+  position: relative;
+}
+
+.mobile-menu-social_item:not(:last-child):not(:last-child)::after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  top: 10px;
+  width: 22px;
+  height: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: -12px;
 }
 
 .mobile-menu-social-link {
@@ -250,6 +264,15 @@ img {
   padding: 20px 24px;
 }
 
+.portfolio-list-img-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-list-img-wrapper img {
+  display: block;
+}
+
 .footer {
   background-color: var(--section-offer);
   justify-content: flex-start;
@@ -277,6 +300,10 @@ img {
   align-items: center;
   list-style: none;
   /* margin-top: 20px; */
+}
+
+.footer-contacts-ul-li {
+  margin-bottom: 8px;
 }
 
 .contacts-link[href*="https://goo.gl/"] {
@@ -343,7 +370,7 @@ footer a:focus {
 
 .social-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .social-list-item, .social-list-item-footer {
@@ -354,9 +381,16 @@ footer a:focus {
   border-radius: 50%;
 }
 
-.social-list-item-footer {
+.social-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-list-item-footer {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-item-footer:not(:last-child) {
+  margin-right: 10px;
 }
 
 footer .social-list-icon {
@@ -530,14 +564,8 @@ footer .social-list-icon {
 
 .list-buttons-div {
   display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-.list-buttons {
-  display: flex;
-  list-style-type: none;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .button-base {
@@ -597,8 +625,8 @@ footer .social-list-icon {
 }
 
 .overlay {
-  display: none;
   position: absolute;
+  overflow: scroll;
   left: 0;
   top: 0;
   width: 100%;

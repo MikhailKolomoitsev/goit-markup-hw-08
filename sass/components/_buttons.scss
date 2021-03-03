@@ -4,14 +4,8 @@
 
 .list-buttons-div {
   display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-.list-buttons {
-  display: flex;
-  list-style-type: none;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 // .buttons {
