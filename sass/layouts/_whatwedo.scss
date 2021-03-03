@@ -31,3 +31,9 @@
 .info-whatwedo .title-links-footer {
   margin: 0;
 }
+
+@media screen and (min-width: 1200px) {
+  .section-whatwedo {
+    display: flex;
+  }
+}

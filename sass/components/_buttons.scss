@@ -8,6 +8,12 @@
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .list-buttons-div {
+    justify-content: center;
+  }
+}
+
 // .buttons {
 //   width: fit-content;
 //   height: 38px;

@@ -61,3 +61,13 @@
     margin-right: 30px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .section-details-item {
+    max-width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

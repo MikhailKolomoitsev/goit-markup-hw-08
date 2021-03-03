@@ -3,10 +3,6 @@
   justify-content: flex-start;
 }
 
-.footer .container {
-  display: flex;
-  flex-direction: column;
-}
 .left-side {
   display: flex;
   align-items: center;
@@ -87,4 +83,10 @@ footer a:focus {
   align-items: center;
   flex-direction: column;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .input-email {
+    margin: 0 auto;
+  }
 }

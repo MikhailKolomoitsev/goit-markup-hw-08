@@ -19,7 +19,7 @@
 
 .footer-form-input {
   text-indent: 16px;
-  width: 100px;
+  width: 180px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -33,7 +33,12 @@
 @media screen and (min-width: 480px) {
   .footer-form-input {
     width: 358px;
-    height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    width: 450px;
   }
 }
 

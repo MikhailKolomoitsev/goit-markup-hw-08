@@ -8,16 +8,43 @@
     display: flex;
     align-items: center;
   }
+
+  .footer & {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header .container {
     justify-content: space-between;
   }
+
+  .footer .container {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    .portfolio & {
+      padding: 0;
+    }
+  }
+
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .header .container {
+    align-items: baseline;
   }
 }
