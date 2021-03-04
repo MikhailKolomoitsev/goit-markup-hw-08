@@ -928,6 +928,7 @@ footer .social-list-icon {
 }
 
 .footer-form-btn-a {
+  cursor: pointer;
   width: 200px;
   height: 50px;
   display: flex;
