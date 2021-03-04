@@ -135,7 +135,7 @@ img {
   background-color: #fff;
   width: 100%;
   max-width: 767px;
-  min-height: 796px;
+  height: 100%;
   transform: translateX(-50%) translateY(-200%);
   transition: transform 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -171,10 +171,6 @@ img {
   width: 40px;
 }
 
-.mobile-menu-nav {
-  margin-bottom: 150px;
-}
-
 .mobile-menu-nav-item {
   font-family: Roboto;
   font-style: normal;
@@ -194,21 +190,6 @@ img {
 
 .mobile-menu-social-link {
   font-size: 10px;
-}
-
-@media screen and (min-width: 480px) {
-  .mobile-menu-nav-item {
-    font-size: 40px;
-  }
-  .mobile-menu-nav {
-    margin-bottom: 300px;
-  }
-  .tel {
-    font-size: 34px;
-  }
-  .mobile-menu-social-link {
-    font-size: 15px;
-  }
 }
 
 .mobile-menu-contacts {
@@ -290,6 +271,37 @@ img {
   opacity: 1;
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-menu-nav-item {
+    font-size: 40px;
+  }
+  .mobile-menu-nav-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .tel {
+    font-size: 34px;
+  }
+  .mobile-menu-social-link {
+    font-size: 15px;
+  }
+}
+
+.mobile-menu-nav {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-height: 600px) {
+  .mobile-menu-nav {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-height: 750px) {
+  .mobile-menu-nav {
+    margin-bottom: 300px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .burger-button,
   .mobile-close-btn,
@@ -338,6 +350,9 @@ img {
   .navbar_list {
     margin-right: 305px;
   }
+  .contacts-link {
+    padding: 32px 0 32px 0;
+  }
 }
 
 .padding-bottom {
@@ -381,12 +396,18 @@ img {
 @media screen and (min-width: 1200px) {
   .background-offer {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offer-section/hero-desktop.jpg);
+    max-width: 1600px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
 @media screen and (min-width: 1200px), screen and (min-devise-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .background-offer {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/offer-section/hero-desktop@2x.jpg);
+    max-width: 1600px;
+    min-height: 600px;
   }
 }
 
@@ -413,6 +434,14 @@ img {
   .section-offer-h2 {
     font-size: 26px;
     line-height: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-offer-h2 {
+    font-size: 44px;
+    line-height: 60px;
+    max-width: 696px;
   }
 }
 
@@ -672,7 +701,6 @@ img {
 
 .footer {
   background-color: var(--section-offer);
-  justify-content: flex-start;
 }
 
 .left-side {
@@ -766,6 +794,15 @@ footer a:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .left-side,
+  .footer-contacts-ul,
+  .footer-wrapper-links,
+  .footer-form {
+    align-items: flex-start;
+  }
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -842,8 +879,10 @@ footer .social-list-icon {
 }
 
 .footer-form-input {
+  display: block;
   text-indent: 16px;
-  width: 180px;
+  max-width: 358px;
+  min-width: 250px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -852,18 +891,6 @@ footer .social-list-icon {
   border-radius: 4px;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .footer-form-input {
-    width: 358px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-form-input {
-    width: 450px;
-  }
 }
 
 .footer-form-input:focus,
@@ -928,6 +955,31 @@ footer .social-list-icon {
   height: 24px;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-form-input {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -964,6 +1016,12 @@ footer .social-list-icon {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-form h3 {
+    font-size: 18px;
+  }
 }
 
 .modal-form-input-label {
@@ -1188,6 +1246,12 @@ footer .social-list-icon {
 
 .modal-form-btn:hover, .modal-form-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
 }
 
 .title-h2 {

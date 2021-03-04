@@ -1,6 +1,5 @@
 .footer {
   background-color: var(--section-offer);
-  justify-content: flex-start;
 }
 
 .left-side {
@@ -88,5 +87,14 @@ footer a:focus {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .input-email {
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .left-side,
+  .footer-contacts-ul,
+  .footer-wrapper-links,
+  .footer-form {
+    align-items: flex-start;
   }
 }

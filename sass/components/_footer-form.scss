@@ -18,8 +18,10 @@
 }
 
 .footer-form-input {
+  display: block;
   text-indent: 16px;
-  width: 180px;
+  max-width: 358px;
+  min-width: 250px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -28,18 +30,6 @@
   border-radius: 4px;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .footer-form-input {
-    width: 358px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-form-input {
-    width: 450px;
-  }
 }
 
 .footer-form-input:focus,
@@ -101,4 +91,30 @@
   fill: #ffffff;
   width: 24px;
   height: 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form-input {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
