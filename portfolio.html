@@ -86,24 +86,30 @@
         <section class="portfolio padding-top padding-bottom">
             <div class="container">
                     <ul class="list-buttons list-buttons-div">
-                        <li>
-                            <button class="button-base active-btn" type="button">
-                                Все</button></li>
-                        <li>
-                            <button class="button-base" type="button">
-                                Веб-сайты</button></li>
-                        <li>
-                            <button class="button-base" type="button">
-                                Приложения</button></li>
-                        <li>
-                            <button class="button-base" type="button">
-                                Дизайн</button></li>
-                        <li>
-                            <button class="button-base" type="button">
-                                Маркетинг</button></li>
+                    <li>
+                        <input id="all" class="radiobutton" type="radio" name="cards" value="all" checked onclick="showHideCards(this)" />
+                        <label class="button" for="all">Все</label>
+                    </li>
+                    <li>
+                        <input id="web" class="radiobutton" type="radio" name="cards" value="web" onclick="showHideCards(this)" />
+                        <label class="button" for="web">Веб-сайты</label>
+                    </li>
+                    <li>
+                        <input id="app" class="radiobutton" type="radio" name="cards" value="app" onclick="showHideCards(this)" />
+                        <label class="button" for="app">Приложения</label>
+                    </li>
+                    <li>
+                        <input id="design" class="radiobutton" type="radio" name="cards" value="design" onclick="showHideCards(this)" />
+                        <label class="button" for="design">Дизайн</label>
+                    </li>
+                    <li>
+                        <input id="marketing" class="radiobutton" type="radio" name="cards" value="marketing"
+                            onclick="showHideCards(this)" />
+                        <label class="button" for="marketing">Маркетинг</label>
+                    </li>
                     </ul>
                     <ul class="list-photos container">
-                        <li class="card">
+                        <li class="card" name="web-card">
                             <a href="#" class="link-cards link">
                             <div class="portfolio-list-img-wrapper">
                             <picture>
@@ -134,7 +140,7 @@
                             </div>
                             </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="design-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                     <picture>
@@ -166,7 +172,7 @@
                             </div>
                             </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="design-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                 <picture>
@@ -198,7 +204,7 @@
                             </div>
                             </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="marketing-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                     <picture>
@@ -230,7 +236,7 @@
                             </div>
                             </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="app-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                         <picture>
@@ -262,7 +268,7 @@
                             </div>
                             </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="wed-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                     <picture>
@@ -294,7 +300,7 @@
                             </div>
                         </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="design-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                     <picture>
@@ -326,7 +332,7 @@
                             </div>
                             </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="app-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                     <picture>
@@ -358,7 +364,7 @@
                             </div>
                         </a>
                         </li>
-                        <li class="card">
+                        <li class="card" name="app-card">
                             <a href="#" class="link-cards link">
                                 <div class="portfolio-list-img-wrapper">
                                     <picture>
@@ -471,4 +477,5 @@
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
